@@ -1,0 +1,100 @@
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+backend/.env
+backend/.env.*
+backend/app/.env
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Alembic
+# =========================
+alembic/versions/*.pyc
+
+# =========================
+# Node / Next.js
+# =========================
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+.conv-temp.json
+.openapi-temp.json
+
+# =========================
+# Database files
+# =========================
+*.sqlite
+*.sqlite3
+*.db
+
+# =========================
+# Coverage
+# =========================
+.coverage
+htmlcov/
+coverage/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# README files
+# =========================
+README.md
+backend/README.md
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.swp
+*.swo

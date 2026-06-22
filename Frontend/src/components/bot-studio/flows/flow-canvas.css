@@ -1,0 +1,36 @@
+/* Custom flow nodes — React Flow reserves type names like "input" and applies
+   default chrome (.react-flow__node-input) that fights our node layout. */
+.flow-canvas .react-flow__node-input,
+.flow-canvas .react-flow__node-default,
+.flow-canvas .react-flow__node-output,
+.flow-canvas .react-flow__node-group {
+  width: auto;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+  font-size: inherit;
+  color: inherit;
+}
+
+.flow-canvas .react-flow__node-input.selectable:hover,
+.flow-canvas .react-flow__node-default.selectable:hover,
+.flow-canvas .react-flow__node-output.selectable:hover,
+.flow-canvas .react-flow__node-group.selectable:hover,
+.flow-canvas .react-flow__node-input.selectable.selected,
+.flow-canvas .react-flow__node-input.selectable:focus,
+.flow-canvas .react-flow__node-input.selectable:focus-visible,
+.flow-canvas .react-flow__node-default.selectable.selected,
+.flow-canvas .react-flow__node-default.selectable:focus,
+.flow-canvas .react-flow__node-default.selectable:focus-visible,
+.flow-canvas .react-flow__node-output.selectable.selected,
+.flow-canvas .react-flow__node-output.selectable:focus,
+.flow-canvas .react-flow__node-output.selectable:focus-visible,
+.flow-canvas .react-flow__node-group.selectable.selected,
+.flow-canvas .react-flow__node-group.selectable:focus,
+.flow-canvas .react-flow__node-group.selectable:focus-visible {
+  box-shadow: none;
+}
